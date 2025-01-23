@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Close, Menu as MenuIcon } from "@mui/icons-material";
 
-const Navbar = () => {
+export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -71,5 +71,3 @@ const Navbar = () => {
     </header>
   );
 };
-
-export default Navbar;
