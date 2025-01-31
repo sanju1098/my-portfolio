@@ -1,23 +1,119 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #121d34;
-  --foreground: #ededed;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 240 30% 98%; /* Light gray with slight purple tint */
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 267 86% 76%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 267 70% 65%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 267 80% 70%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 267 86% 76%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 240 20% 13%; /* Dark gray with slight purple tint */
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 267 86% 76%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 267 70% 65%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 267 80% 70%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 267 86% 76%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: "Rubik", sans-serif;
+@layer utilities {
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg, #9560f0 0%, #a585f3 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #9560f0 0%, #a585f3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
