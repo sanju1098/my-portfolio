@@ -37,7 +37,7 @@ export const Navbar = () => {
                       pathname === item.path
                         ? "text-primary"
                         : "text-foreground hover:text-primary"
-                    } px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-600 hover:text-primary`}>
+                    } px-3 py-2 rounded-md text-lg font-semibold uppercase tracking-wide hover:bg-gray-600 hover:text-primary`}>
                     {item.label}
                   </Link>
                 ))}
@@ -73,7 +73,7 @@ export const Navbar = () => {
                     location.pathname === item.path
                       ? "text-primary"
                       : "text-foreground hover:text-primary"
-                  } block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200`}
+                  } block px-3 py-2 rounded-md text-base font-medium uppercase tracking-wide transition-colors duration-200`}
                   onClick={() => setIsOpen(false)}>
                   {item.label}
                 </Link>

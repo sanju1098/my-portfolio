@@ -1,11 +1,17 @@
 import Image from "next/image";
-import clerkAuthAppImg from "@src/assets/Images/clerkAuth.png";
 import { allProjects } from "@src/config/project";
-import { Github } from "lucide-react";
+import { CodeXml, Github } from "lucide-react";
 
 export default function Project() {
   return (
     <>
+      <div className="text-3xl font-bold text-primary flex justify-center items-center gap-2 text-center mt-4">
+        PROJECTS <CodeXml className="w-9 h-9" />
+      </div>
+      <div className="text-xl lg:m-4 m-2">
+        I've built websites using everything from HTML to React and Next.js.
+        Here’s a list of projects I've worked on throughout my journey.
+      </div>
       {allProjects.map((project: any, index: number) => {
         return (
           <section
