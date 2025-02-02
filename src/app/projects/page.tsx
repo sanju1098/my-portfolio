@@ -1,12 +1,13 @@
 import Image from "next/image";
-import { allProjects } from "@src/config/project";
+import { allProjects, otherProfiles } from "@src/config/project";
 import { CodeXml, Github } from "lucide-react";
+import Link from "next/link";
 
 export default function Project() {
   return (
     <>
       <div className="text-3xl font-bold text-primary flex justify-center items-center gap-2 text-center mt-4">
-        PROJECTS <CodeXml className="w-9 h-9" />
+        Projects <CodeXml className="w-9 h-9" />
       </div>
       <div className="text-xl lg:m-4 m-2">
         I've built websites using everything from HTML to React and Next.js.
@@ -51,6 +52,32 @@ export default function Project() {
           </section>
         );
       })}
+
+      {/* Github & CodeSandbox */}
+      <div className="flex flex-wrap justify-evenly mx-8 gap-6">
+        {otherProfiles.map((profile: any, index: number) => {
+          return (
+            <div
+              key={index}
+              className="bg-card w-full md:w-5/12 rounded-lg p-6 md:p-8 hover:border-primary border-2 transition-colors duration-300 flex flex-col items-center text-center shadow-lg">
+              {profile.icon}
+              <h3 className="text-xl font-semibold mt-4">
+                {profile.profileName}
+              </h3>
+              <p className="mt-2 text-gray-600 dark:text-gray-300">
+                {profile.description}
+              </p>
+              <Link
+                href={profile.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 text-primary font-medium hover:underline">
+                Visit {profile.profileName} →
+              </Link>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }

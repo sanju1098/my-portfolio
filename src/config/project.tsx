@@ -3,6 +3,8 @@ import chatAppImg from "../assets/Images/chatappUI.png";
 import clerkAuthAppImg from "../assets/Images/clerkAuth.png";
 import notesImg from "../assets/Images/notes.png";
 import weatherImg from "../assets/Images/weather.png";
+import { FaGithub } from "react-icons/fa";
+import { AiOutlineCodeSandbox } from "react-icons/ai";
 
 export const topProjects = [
   {
@@ -85,5 +87,30 @@ export const allProjects = [
       "Mock.io",
       "Tailwind CSS",
     ],
+  },
+];
+
+export const otherProfiles = [
+  {
+    profileName: "GitHub Profile",
+    icon: <FaGithub size="3rem" className="text-gray-800 dark:text-white" />,
+    description: `I actively maintain several repositories focused on frontend
+            development, UI components, and performance optimizations. Explore
+            my projects, code snippets, and experiments on GitHub.`,
+    link: "https://github.com/sanju1098",
+  },
+  {
+    profileName: "CodeSandbox Profile",
+    icon: (
+      <AiOutlineCodeSandbox
+        size="3rem"
+        className="text-gray-800 dark:text-white"
+      />
+    ),
+    description: `Apart from my projects, I experiment with React components, UI
+            designs, state management techniques, and JavaScript utilities in
+            CodeSandbox. You’ll find reusable components, small projects, and
+            interactive demos showcasing my work.`,
+    link: "https://codesandbox.io/u/Sanjay%20Kumar%20SR",
   },
 ];
