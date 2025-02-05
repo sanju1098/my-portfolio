@@ -1,3 +1,4 @@
+"use client";
 import { skills } from "@src/config/skills";
 import { Award, Box, Laptop, SquareChartGantt, Zap } from "lucide-react";
 

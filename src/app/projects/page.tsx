@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { allProjects, otherProfiles } from "@src/config/project";
 import { CodeXml, Github } from "lucide-react";
