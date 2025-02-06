@@ -8,12 +8,10 @@ export default function Skills() {
         Experience <Briefcase className="w-9 h-9" />
       </div>
       <div className="text-xl lg:m-4 m-2">
-        I have extensive experience working with frontend technologies like
-        React.js, TypeScript, HTML, and CSS. I focus on building scalable,
-        high-performance applications with seamless user experiences. My
-        expertise includes creating interactive UIs, optimizing performance, and
-        maintaining code quality using tools like Jest, Storybook, and React
-        Testing Library.
+        I have gained valuable experience working in different organizations,
+        contributing to various projects in frontend development. Below is a
+        summary of my professional journey, including the companies I have
+        worked with, my roles, and the duration of my tenure.
       </div>
 
       <div className="relative space-y-12 animate-fade-in">

@@ -19,11 +19,11 @@ export const Navbar = () => {
 
   return (
     <header className="w-full h-16">
-      <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm z-50 border-b border-border">
+      <nav className="fixed top-0 w-full bg-background/90 backdrop-blur-sm z-50 border-b border-border">
         <div className=" px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="text-2xl font-bold text-primary">
-              Portfolio
+              SK.
             </Link>
 
             <div className="flex items-center gap-4">
@@ -35,9 +35,9 @@ export const Navbar = () => {
                     href={item.path}
                     className={`${
                       pathname === item.path
-                        ? "text-primary"
-                        : "text-foreground hover:text-primary"
-                    } px-3 py-2 rounded-md text-lg font-semibold uppercase tracking-wide hover:bg-gray-600 hover:text-primary`}>
+                        ? "text-primary hover:text-foreground"
+                        : "text-foreground hover:text-foreground"
+                    } px-3 py-2 rounded-md text-lg font-semibold uppercase tracking-wide hover:bg-primary`}>
                     {item.label}
                   </Link>
                 ))}
@@ -73,7 +73,7 @@ export const Navbar = () => {
                     location.pathname === item.path
                       ? "text-primary"
                       : "text-foreground hover:text-primary"
-                  } block px-3 py-2 rounded-md text-base font-medium uppercase tracking-wide transition-colors duration-200`}
+                  } block px-3 py-2 rounded-md text-base font-medium hover:bg-primary hover:text-foreground uppercase tracking-wide transition-colors duration-200`}
                   onClick={() => setIsOpen(false)}>
                   {item.label}
                 </Link>
