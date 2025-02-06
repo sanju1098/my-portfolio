@@ -1,5 +1,5 @@
 import { workExperiences } from "@src/config/experience";
-import { Briefcase, Calendar, Building, Award, FileText } from "lucide-react";
+import { Briefcase, Calendar, Building, Award } from "lucide-react";
 
 export default function Skills() {
   return (

@@ -1,6 +1,7 @@
 "use client";
 import { skills } from "@src/config/skills";
 import { Award, Box, Laptop, SquareChartGantt, Zap } from "lucide-react";
+import { ReactNode } from "react";
 
 export default function Skills() {
   return (
@@ -20,14 +21,19 @@ export default function Skills() {
         <Laptop className="w-8 h-8" />
       </div>
       <div className="flex flex-wrap gap-8 mx-8 my-4 text-md">
-        {skills.languages.map((language: any, index: number) => (
-          <div
-            key={index}
-            className="flex flex-col justify-center items-center">
-            <div>{language.icon}</div>
-            <p>{language.name}</p>
-          </div>
-        ))}
+        {skills.languages.map(
+          (
+            { icon, name }: { icon: ReactNode; name: string },
+            index: number,
+          ) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center">
+              <div>{icon}</div>
+              <p>{name}</p>
+            </div>
+          ),
+        )}
       </div>
       <br />
 
@@ -36,14 +42,19 @@ export default function Skills() {
         <Zap className="w-8 h-8" />
       </div>
       <div className="flex flex-wrap gap-8 mx-8 my-4 text-lg">
-        {skills.frameworks.map((framework: any, index: number) => (
-          <div
-            key={index}
-            className="flex flex-col justify-center items-center">
-            <div>{framework.icon}</div>
-            <p>{framework.name}</p>
-          </div>
-        ))}
+        {skills.frameworks.map(
+          (
+            { icon, name }: { icon: ReactNode; name: string },
+            index: number,
+          ) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center">
+              <div>{icon}</div>
+              <p>{name}</p>
+            </div>
+          ),
+        )}
       </div>
       <br />
 
@@ -52,14 +63,19 @@ export default function Skills() {
         <SquareChartGantt className="w-8 h-8" />
       </div>
       <div className="flex flex-wrap gap-8 mx-8 my-4 text-lg">
-        {skills.tools.map((tool: any, index: number) => (
-          <div
-            key={index}
-            className="flex flex-col justify-center items-center">
-            <div>{tool.icon}</div>
-            <p>{tool.name}</p>
-          </div>
-        ))}
+        {skills.tools.map(
+          (
+            { icon, name }: { icon: ReactNode; name: string },
+            index: number,
+          ) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center">
+              <div>{icon}</div>
+              <p>{name}</p>
+            </div>
+          ),
+        )}
       </div>
       <br />
 
@@ -68,14 +84,19 @@ export default function Skills() {
         <Box className="w-8 h-8" />
       </div>
       <div className="flex flex-wrap gap-8 mx-8 my-4 text-lg">
-        {skills.packages.map((packageTool: any, index: number) => (
-          <div
-            key={index}
-            className="flex flex-col justify-center items-center">
-            <div>{packageTool.icon}</div>
-            <p>{packageTool.name}</p>
-          </div>
-        ))}
+        {skills.packages.map(
+          (
+            { icon, name }: { icon: ReactNode; name: string },
+            index: number,
+          ) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center">
+              <div>{icon}</div>
+              <p>{name}</p>
+            </div>
+          ),
+        )}
       </div>
       <br />
     </>

@@ -1,8 +1,10 @@
 import { ButtonHTMLAttributes } from "react";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
-
-export const Button = ({ className = "", children, ...props }: ButtonProps) => {
+export const Button = ({
+  className = "",
+  children,
+  ...props
+}: ButtonHTMLAttributes<HTMLButtonElement>) => {
   return (
     <button
       className={`inline-flex items-center justify-center px-6 py-3 

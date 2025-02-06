@@ -11,8 +11,9 @@ export default function Project() {
         Projects <CodeXml className="w-9 h-9" />
       </div>
       <div className="text-xl lg:m-4 m-2">
-        I've built websites using everything from HTML to React and Next.js.
-        Here’s a list of projects I've worked on throughout my journey.
+        I&apos;ve built websites using everything from HTML to React and
+        Next.js. Here&apos;s a list of projects I&apos;ve worked on throughout
+        my journey.
       </div>
       {allProjects.map((project: any, index: number) => {
         return (

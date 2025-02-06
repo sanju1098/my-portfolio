@@ -1,13 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { Github, SquareArrowOutUpRight } from "lucide-react";
+import { Github } from "lucide-react";
 
 export const ProjectCard = ({
   image,
   title,
   description,
   gitLink,
-  demoLink,
   techStack,
 }: {
   image: any;
