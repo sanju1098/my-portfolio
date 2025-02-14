@@ -17,7 +17,7 @@ export default function Home() {
               Hi There! 👋
             </h1>
             <h2 className="text-4xl my-4 font-semibold">
-              I&apos;m
+              I&apos;m{" "}
               <span className="text-primary text-4xl font-medium">
                 Sanjay Kumar S R
               </span>
