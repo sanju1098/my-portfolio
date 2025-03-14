@@ -26,7 +26,7 @@ export default function Home() {
               Application Developer || Frontend Developer
             </h3>
             <p className="text-xl my-4 text-muted-foreground leading-relaxed">
-              Professional Frontend Developer with 3.6+ years of experience in
+              Professional Frontend Developer with 4+ years of experience in
               creating high-quality, user-centric web applications. Expertise in
               modern technologies such as React.js, TypeScript, and Next.js,
               combined with a strong understanding of core web development

@@ -7,8 +7,8 @@ export const workExperiences = [
       {
         name: "Airline Retailing",
         responsibilities: [
-          `Created endpoints to convert IATA Airline Retailing Order View RS (version 21.3.4) data from XML to JSON format and 
-          displayed the complete Order View data in a structured, user-friendly format based on user requests.`,
+          "Designed a responsive web app for IATA Airline Retailing Order View RS (21.3.4), reducing page load time by 25% and presenting data in a user-friendly format.",
+          "Developed an end-to-end order creation flow with Formik for dynamic validation and ensured accurate XML data submission on the NDC client platform.",
         ],
       },
       {
@@ -48,7 +48,7 @@ export const workExperiences = [
   },
   {
     company: "Sixth Circle Technologies Pvt Ltd. ",
-    title: "Web Developer",
+    title: "Intern Web Developer",
     period: "Feb 2021 – Sep 2021",
     projects: [
       {

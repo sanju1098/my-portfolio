@@ -27,12 +27,12 @@ export const skills = {
       icon: <SiJavascript size="3rem" fill="#F0DB4F" />,
       name: "JavaScript",
     },
+    { icon: <SiTypescript size="3rem" fill="#3178c6" />, name: "TypeScript" },
     { icon: <FaHtml5 size="3rem" fill="#F06529" />, name: "HTML" },
     { icon: <FaCss3Alt size="3rem" fill="#264DE4 " />, name: "CSS" },
   ],
   frameworks: [
     { icon: <FaReact size="3rem" fill="#06BCEE" />, name: "React JS" },
-    { icon: <SiTypescript size="3rem" fill="#3178c6" />, name: "TypeScript" },
     { icon: <SiNextdotjs size="3rem" />, name: "Next.JS" },
     { icon: <SiRedux size="3rem" fill="#764ABC" />, name: "Redux" },
     { icon: <SiVite size="3rem" fill="#8883f0" />, name: "Vite" },
