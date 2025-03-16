@@ -59,9 +59,9 @@ export const allProjects = [
   },
   {
     image: weatherImg,
-    title: "WeatherNow - Real-Time Weather Updates",
+    title: "Weather Forecast - Real-Time Weather Updates",
     description:
-      "WeatherNow allows users to search for any city or state and get real-time weather conditions, including temperature, to stay updated with the latest forecasts.",
+      "Weather Forecast provides real-time weather updates for any searched city with a modern, user-friendly interface. It displays current weather details, including temperature, wind speed, humidity, and atmospheric pressure, along with a five-day forecast. The UI features a clean design with structured cards and clear typography for easy readability.",
     gitLink: "https://github.com/sanju1098/Simple-Notes-App",
     techStack: ["React JS", "Open Weathermap API", "JavaScript", "CSS"],
   },
