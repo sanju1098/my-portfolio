@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import { Github } from "lucide-react";
+import { SiRefinedgithub } from "react-icons/si";
+import { FaEye } from "react-icons/fa";
 
 export const ProjectCard = ({
   image,
   title,
   description,
   gitLink,
+  demoLink,
   techStack,
 }: {
   image: any;
@@ -43,14 +45,23 @@ export const ProjectCard = ({
           </span>
         ))}
       </div>
-      <div className="px-6 pt-4 pb-2 flex justify-center">
+      <div className="px-6 pt-4 pb-2 flex justify-center gap-8">
         {gitLink && (
           <a
             href={gitLink}
             target="_blank"
             rel="noopener noreferrer"
             className=" hover:text-blue-600 dark:hover:text-blue-300 transition-all duration-300 flex justify-center items-center gap-1">
-            Source Code <Github size={18} />
+            Source Code <SiRefinedgithub />
+          </a>
+        )}
+        {demoLink && (
+          <a
+            href={demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" hover:text-blue-600 dark:hover:text-blue-300 transition-all duration-300 flex justify-center items-center gap-1">
+            Live Preview <FaEye className="w-5 h-5" />
           </a>
         )}
       </div>

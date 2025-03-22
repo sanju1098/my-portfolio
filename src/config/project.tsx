@@ -3,17 +3,26 @@ import chatAppImg from "../assets/Images/chatappUI.png";
 import clerkAuthAppImg from "../assets/Images/clerkAuth.png";
 import notesImg from "../assets/Images/notes.png";
 import weatherImg from "../assets/Images/weather.png";
+import travelgenieImg from "../assets/Images/travelGenie.png";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineCodeSandbox } from "react-icons/ai";
 
 export const topProjects = [
   {
-    image: firebaseAppImg,
-    title: "Firebase Authentication with Google OAuth",
+    image: weatherImg,
+    title: "Weather Forecast",
     description:
-      "Developed a secure user authentication system within a React.js application, leveraging Firebase Authentication for seamless login functionality. The application features a modern and intuitive user interface built with Material-UI components, ensuring a polished user experience. Firebase Authentication provides robust, scalable security with support for multiple sign-in methods, including email/password and Google authentication.",
-    gitLink: "https://github.com/sanju1098/Firebase-Authentication",
-    techStack: ["React JS", "Material UI", "JavaScript", "CSS", "Firebase"],
+      "Weather Forecast provides real-time weather updates for any searched city with a modern, user-friendly interface. It displays current weather details, including temperature, wind speed, humidity, and atmospheric pressure, along with a five-day forecast. The UI features a clean design with structured cards and clear typography for easy readability.",
+    gitLink: "https://github.com/sanju1098/Simple-Notes-App",
+    demoLink: "https://reactjs-weather-appplication.netlify.app/",
+    techStack: [
+      "React JS",
+      "Typescript",
+      "Vite",
+      "Open Weathermap API",
+      "JavaScript",
+      "CSS",
+    ],
   },
   {
     image: chatAppImg,
@@ -24,18 +33,19 @@ export const topProjects = [
     techStack: ["React JS", "Vite", "Material UI", "Node Server", "JavaScript"],
   },
   {
-    image: clerkAuthAppImg,
-    title: "Clerk-authenticated Web app with Mock.io API",
+    image: travelgenieImg,
+    title: "TravelGenie.AI",
     description:
-      "Next.js web application that integrates Clerk for secure user authentication, providing a seamless login and registration experience. It utilizes mockapi.io to handle API requests, simulating a real backend and enabling easy management of user data and interactions.",
-    gitLink: "https://github.com/sanju1098/clerk-auth-nextjs",
+      "TravelGenie.AI is a smart travel planning platform powered by Gemini 1.5 Flash AI, designed to create personalized itineraries. By entering details like destination, dates, budget, and interests, users get optimized trip plans with curated activities. The AI enables fast itinerary generation and real-time recommendations.",
+    gitLink: "https://github.com/sanju1098/travel-genie-ai",
+    demoLink: "https://travel-genie-ai.netlify.app/",
     techStack: [
       "React JS",
       "TypeScript",
-      "Next.JS",
-      "Clert Next.JS",
-      "Mock.io",
+      "Material UI",
       "Tailwind CSS",
+      "Vite",
+      "Gemini 1.5 Flash AI",
     ],
   },
 ];
@@ -50,20 +60,36 @@ export const allProjects = [
     techStack: ["React JS", "Material UI", "JavaScript", "CSS", "Firebase"],
   },
   {
-    image: notesImg,
-    title: "Notes Management App – A Simple CRUD Application",
+    image: travelgenieImg,
+    title: "TravelGenie.AI",
     description:
-      "This project is a CRUD-based Notes Management Application that allows users to create, update, delete, and search for notes efficiently. Users can add new notes, edit existing ones, and remove unwanted notes while utilizing a search functionality to quickly find notes by name.",
-    gitLink: "https://github.com/sanju1098/Simple-Notes-App",
-    techStack: ["React JS", "Redux", "Bootstrap", "JavaScript", "CSS"],
+      "TravelGenie.AI is a smart travel planning platform powered by Gemini 1.5 Flash AI, designed to create personalized itineraries. By entering details like destination, dates, budget, and interests, users get optimized trip plans with curated activities. The AI enables fast itinerary generation and real-time recommendations.",
+    gitLink: "https://github.com/sanju1098/travel-genie-ai",
+    demoLink: "https://travel-genie-ai.netlify.app/",
+    techStack: [
+      "React JS",
+      "TypeScript",
+      "Material UI",
+      "Tailwind CSS",
+      "Vite",
+      "Gemini 1.5 Flash AI",
+    ],
   },
   {
     image: weatherImg,
-    title: "Weather Forecast - Real-Time Weather Updates",
+    title: "Weather Forecast",
     description:
       "Weather Forecast provides real-time weather updates for any searched city with a modern, user-friendly interface. It displays current weather details, including temperature, wind speed, humidity, and atmospheric pressure, along with a five-day forecast. The UI features a clean design with structured cards and clear typography for easy readability.",
     gitLink: "https://github.com/sanju1098/Simple-Notes-App",
-    techStack: ["React JS", "Open Weathermap API", "JavaScript", "CSS"],
+    demoLink: "https://reactjs-weather-appplication.netlify.app/",
+    techStack: [
+      "React JS",
+      "Typescript",
+      "Vite",
+      "Open Weathermap API",
+      "JavaScript",
+      "CSS",
+    ],
   },
   {
     image: chatAppImg,
@@ -83,10 +109,19 @@ export const allProjects = [
       "React JS",
       "TypeScript",
       "Next.JS",
-      "Clert Next.JS",
+      "Clerk Next.JS",
       "Mock.io",
       "Tailwind CSS",
     ],
+  },
+  {
+    image: notesImg,
+    title: "Notes Management App – A Simple CRUD Application",
+    description:
+      "This project is a CRUD-based Notes Management Application that allows users to create, update, delete, and search for notes efficiently. Users can add new notes, edit existing ones, and remove unwanted notes while utilizing a search functionality to quickly find notes by name.",
+    gitLink: "https://github.com/sanju1098/Simple-Notes-App",
+    demoLink: "https://notes-app-crud.netlify.app/",
+    techStack: ["React JS", "Redux", "Bootstrap", "JavaScript", "CSS"],
   },
 ];
 

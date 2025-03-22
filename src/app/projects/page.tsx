@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
 import { allProjects, otherProfiles } from "@src/config/project";
-import { CodeXml, Github } from "lucide-react";
+import { CodeXml } from "lucide-react";
 import Link from "next/link";
+import { SiRefinedgithub } from "react-icons/si";
+import { FaEye } from "react-icons/fa";
 
 export default function Project() {
   return (
@@ -33,13 +35,24 @@ export default function Project() {
               <p className="mt-4 text-lg text-justify">
                 {project.description}{" "}
               </p>
-              <a
-                href={project.gitLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className=" hover:text-blue-600 dark:hover:text-blue-300 transition-all duration-300 flex justify-start items-center gap-1 ">
-                Source Code <Github size={18} />
-              </a>
+              <div className="flex gap-4">
+                <a
+                  href={project.gitLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all duration-300 flex justify-start items-center gap-1 my-2">
+                  Source Code <SiRefinedgithub />
+                </a>
+                {project.demoLink && (
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-all duration-300 flex justify-start items-center gap-1 my-2">
+                    Live Preview <FaEye className="w-5 h-5" />
+                  </a>
+                )}
+              </div>
 
               <div className="text-left">
                 {project.techStack.map((tech: string, index: number) => (

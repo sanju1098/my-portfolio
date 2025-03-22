@@ -1,5 +1,5 @@
 "use client";
-import { ArrowDownToLine, Atom, SquareArrowOutUpRight } from "lucide-react";
+import { ArrowDownToLine, SquareArrowOutUpRight } from "lucide-react";
 import { topProjects } from "@src/config/project";
 import { myWork } from "@src/config/mywork";
 import { ProjectCard } from "@src/components/ui/ProjectCard";
@@ -74,12 +74,6 @@ export default function Home() {
         <h2 className="text-3xl mt-2 font-bold gradient-text text-center">
           PROJECTS
         </h2>
-        <div className="text-xl text-center my-2 flex justify-center items-center gap-2">
-          <span className="flex items-center">
-            Here are a few of my favorite projects
-          </span>
-          <Atom className="w-8 h-8" />
-        </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:mx-12">
           {topProjects.map((project: any, index: number) => (
             <ProjectCard
