@@ -1,8 +1,11 @@
+import shine from "../assets/Images/shine-unisys.png";
+import thankyou from "@src/assets/Images/thanku-unisys.png";
+
 export const workExperiences = [
   {
-    company: "Unisys India Private Limited",
+    company: "Unisys India Private Limited.",
     title: "Application Development Engineer",
-    period: "Jun 2023  - Present",
+    period: "Jun 2023  - April 2025",
     projects: [
       {
         name: "Airline Retailing",
@@ -29,9 +32,19 @@ export const workExperiences = [
         ],
       },
     ],
+    recognition: [
+      {
+        image: shine,
+        link: "https://app.espresa.com/r/shared/643a0a4f-7974-46ea-be54-953178b2e353/",
+      },
+      {
+        image: thankyou,
+        link: "https://drive.google.com/file/d/1IPG9lzQ3pobGsTzYaTBJz_CatxH3Wjj0/view?usp=drive_link",
+      },
+    ],
   },
   {
-    company: "Harlalka Services India Private Limited. ",
+    company: "Harlalka Services India Private Limited.",
     title: "Frontend Developer",
     period: "Oct 2021 – Jun 2023",
     projects: [
@@ -47,7 +60,7 @@ export const workExperiences = [
     ],
   },
   {
-    company: "Sixth Circle Technologies Pvt Ltd. ",
+    company: "Sixth Circle Technologies Pvt Ltd.",
     title: "Intern Web Developer",
     period: "Feb 2021 – Sep 2021",
     projects: [

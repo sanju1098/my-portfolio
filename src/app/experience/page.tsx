@@ -1,5 +1,6 @@
 import { workExperiences } from "@src/config/experience";
 import { Briefcase, Calendar, Building, Award } from "lucide-react";
+import Image from "next/image";
 
 export default function Skills() {
   return (
@@ -81,6 +82,28 @@ export default function Skills() {
                       ))}
                     </div>
                   </div>
+
+                  {/* Awards */}
+                  {exp.recognition && exp.recognition.length > 0 && (
+                    <div className="flex items-center gap-3 mt-2 flex-wrap">
+                      {exp.recognition.map((recog: any, rIndex: number) => (
+                        <a
+                          key={rIndex}
+                          href={recog.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block">
+                          <div className="w-20 h-20 rounded-full overflow-hidden border border-primary hover:scale-105 transition-transform duration-200 bg-white flex items-center justify-center">
+                            <Image
+                              src={recog.image}
+                              alt={`Recognition ${rIndex + 1}`}
+                              className="object-cover w-full h-full"
+                            />
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
