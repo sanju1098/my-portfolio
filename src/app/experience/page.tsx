@@ -61,8 +61,8 @@ export default function Skills() {
                       {exp.projects.map((project: any, pIndex: number) => (
                         <div
                           key={pIndex}
-                          className="bg-[#f0f0f0] p-4 rounded-lg border border-primary/10">
-                          <h5 className="text-black text-lg font-semibold mb-2">
+                          className="bg-background p-4 rounded-lg border border-primary/10">
+                          <h5 className="text-primary text-lg font-semibold mb-2">
                             {project.name}
                           </h5>
                           <div className="mt-2">
