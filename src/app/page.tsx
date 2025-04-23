@@ -26,15 +26,17 @@ export default function Home() {
               Application Developer || Frontend Developer
             </h3>
             <p className="text-xl my-4 text-muted-foreground leading-relaxed">
-              Professional Frontend Developer with 4+ years of experience in
-              creating high-quality, user-centric web applications. Expertise in
-              modern technologies such as React.js, TypeScript, and Next.js,
-              combined with a strong understanding of core web development
-              principles. Proficient in building responsive, dynamic, and
-              scalable front-end solutions, optimizing website performance, and
-              resolving complex code issues. Focused on leveraging best
-              practices to deliver efficient, seamless user experiences and
-              enhance overall application functionality.
+              Professional Frontend Developer with over 4 years of experience in
+              building responsive, scalable, and user-centric web applications.
+              Highly proficient in React.js, TypeScript, JavaScript (ES6+), and
+              Next.js, with strong expertise in modern UI/UX design principles,
+              component-based architecture, and performance optimization.
+              Skilled in writing clean, maintainable code and collaborating
+              effectively with cross-functional teams in Agile environments.
+              Experienced in state management, REST API integration, and web
+              accessibility. Committed to delivering high-quality,
+              production-ready applications that provide seamless and efficient
+              user experiences across various devices and platforms.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a

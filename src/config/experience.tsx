@@ -10,25 +10,35 @@ export const workExperiences = [
       {
         name: "Airline Retailing",
         responsibilities: [
-          "Designed a responsive web app for IATA Airline Retailing Order View RS (21.3.4), reducing page load time by 25% and presenting data in a user-friendly format.",
-          "Developed an end-to-end order creation flow with Formik for dynamic validation and ensured accurate XML data submission on the NDC client platform.",
+          `Developed a responsive UI using React.js and TypeScript to display IATA Airline Retailing
+          Order View RS (v21.3.4) data, implementing code splitting, lazy loading,
+          and performance optimizations to reduce load time by 25%.`,
+          `Built an end-to-end order creation flow with progress indicators and integrated
+          accurate XML data submission on the NDC client platform.`,
         ],
       },
       {
         name: " Digital Engineer – Chat UI & Admin UI",
         responsibilities: [
-          "Designed an AI-driven chat interface using Next.js, integrating the useChat AI/React Vercel SDK for document-based responses.",
-          `Optimized performance by reducing API load times, implementing feedback logic for improved response accuracy, 
-          and architecting a solution for seamless chat history management.`,
+          `Configured Vite.js for optimized builds, reducing build time by 45%, 
+          and deployed applications to Azure using Docker with efficient multi-stage deployment.`,
+          `Designed and built a conversational chat interface using Next.js and 
+          Vercel’s useChat SDK for dynamic, document-based responses.`,
+          `Enhanced performance by minimizing API load times and implemented feedback logic 
+          for improved response accuracy, while architecting a robust chat history management system.`,
         ],
       },
       {
         name: "Unisys Framework – UI UX Framework",
         responsibilities: [
-          `Developed a React-based Web Component Library with 75+ reusable components, enhancing flexibility and reusability,
-          and documented component properties and types in Storybook for clear and effective documentation.`,
-          `Implemented a Global Theme setup for user customization, and integrated Jest with React Testing Library,
-          writing extensive unit tests to ensure high code quality and performance.`,
+          `Architected and maintained a scalable React component library with 75+ reusable
+          and accessible components, following modern UI architecture best practices and
+          implementing a global theming system for user customization.`,
+          `Integrated Storybook for interactive component documentation and applied Jest/React 
+          Testing Library for automated testing to ensure high-quality, production-ready code.`,
+          `Built a comprehensive demo web app to showcase components across Web and Mobile 
+          and actively participated in peer code reviews to uphold code standards and
+          maintain consistency.`,
         ],
       },
     ],
@@ -51,10 +61,14 @@ export const workExperiences = [
       {
         name: " VMware CSP Market Place (Client: VMWare)",
         responsibilities: [
-          `Established form validation, error handling, and form factor validations using both functional and class components for
-          VMware solution, while managing version control, platform integration, and EULA agreements for VMware validated solutions.`,
-          `Enhanced UI components by utilizing the VMware Clarity Design System and showcased them with Storybook
-          for clear documentation and consistent UI development.`,
+          `Developed well-structured, responsive, and reusable UI components using React.js, 
+          HTML5, and CSS3 for VMware, with form validation, error handling, and
+          integration of EULA agreements using both functional and class components.`,
+          `Improved accessibility to 80% WCAG compliance using A11Y best practices and NVDA testing, 
+          while proactively debugging UI issues to maintain high code quality and performance.`,
+          `Utilized the VMware Clarity Design System, documented components with Storybook, 
+          and actively participated in code reviews, identifying performance bottlenecks and
+          promoting scalable coding practices across modules.`,
         ],
       },
     ],
@@ -67,9 +81,10 @@ export const workExperiences = [
       {
         name: " Custom Local Retail Market Aggregator Platform (Custom LMAP)",
         responsibilities: [
-          `Created PostgreSQL database schemas for product and stock tables, developed views, serializers, and models for the 
-          Product and Order models using Python, Django, and Django Rest Framework, and implemented full - stack UI screens to 
-          ensure seamless API integration.`,
+          `Created PostgreSQL database schemas for product and stock tables, developed views,
+          serializers, and models for the Product and Order models using Python, Django, and
+          Django Rest Framework, and implemented full - stack UI screens to ensure seamless
+          API integration.`,
         ],
       },
     ],
