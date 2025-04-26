@@ -2,6 +2,7 @@
 import { skills } from "@src/config/skills";
 import { Award, Box, Laptop, SquareChartGantt, Zap } from "lucide-react";
 import { ReactNode } from "react";
+import { SiVitest } from "react-icons/si";
 
 export default function Skills() {
   return (
@@ -43,6 +44,27 @@ export default function Skills() {
       </div>
       <div className="flex flex-wrap gap-8 mx-8 my-4 text-lg">
         {skills.frameworks.map(
+          (
+            { icon, name }: { icon: ReactNode; name: string },
+            index: number,
+          ) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center">
+              <div>{icon}</div>
+              <p>{name}</p>
+            </div>
+          ),
+        )}
+      </div>
+      <br />
+
+      <div className="mx-8 my-4 text-2xl font-semibold flex items-center gap-2 text-primary">
+        <span className="flex items-center">Testing Tools</span>
+        <SiVitest className="w-8 h-8" />
+      </div>
+      <div className="flex flex-wrap gap-8 mx-8 my-4 text-lg">
+        {skills.testing.map(
           (
             { icon, name }: { icon: ReactNode; name: string },
             index: number,
