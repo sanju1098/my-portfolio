@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-4">
             <a
-              href="https://yourportfolio.com"
+              href="https://sanjay-portfolio-delta.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
