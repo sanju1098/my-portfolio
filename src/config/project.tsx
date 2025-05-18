@@ -1,5 +1,6 @@
 import firebaseAppImg from "../assets/Images/firebase.png";
 import chatAppImg from "../assets/Images/chatappUI.png";
+import cryptoLoom from "../assets/Images/cryptoLoom.png";
 import clerkAuthAppImg from "../assets/Images/clerkAuth.png";
 import notesImg from "../assets/Images/notes.png";
 import weatherImg from "../assets/Images/weather.png";
@@ -25,12 +26,13 @@ export const topProjects = [
     ],
   },
   {
-    image: chatAppImg,
-    title: "WebSocket Real-Time Chat Application",
+    image: cryptoLoom,
+    title: "CryptoLoom",
     description:
-      "Developed a WebSocket-based chat application that enables users to log in and engage in real-time conversations. The app supports dynamic user authentication and maintains chat connections for seamless communication. A login page with user identification and enhance the user experience. Material UI was used to ensure a consistent and user-friendly interface throughout the application.",
-    gitLink: "https://github.com/sanju1098/react-websocket-chat",
-    techStack: ["React JS", "Vite", "Material UI", "Node Server", "JavaScript"],
+      "CryptoLoom is a real-time cryptocurrency dashboard that streams live market data from Binance’s WebSocket API.",
+    gitLink: "https://github.com/sanju1098/crypto-loom",
+    demoLink: "https://crypto-loom-pi.vercel.app/",
+    techStack: ["React JS", "TypeScript", "Vite", "WebSocket", "Binance API"],
   },
   {
     image: travelgenieImg,
@@ -90,6 +92,15 @@ export const allProjects = [
       "JavaScript",
       "CSS",
     ],
+  },
+  {
+    image: cryptoLoom,
+    title: "CryptoLoom",
+    description:
+      "CryptoLoom is a real-time cryptocurrency dashboard that streams live market data from Binance’s WebSocket API. It displays up-to-date price, volume, and percentage change for various cryptocurrencies in both card and table views.",
+    gitLink: "https://github.com/sanju1098/crypto-loom",
+    demoLink: "https://crypto-loom-pi.vercel.app/",
+    techStack: ["React JS", "TypeScript", "Vite", "WebSocket", "Binance API"],
   },
   {
     image: chatAppImg,
